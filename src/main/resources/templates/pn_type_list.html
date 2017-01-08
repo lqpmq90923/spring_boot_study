@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>类型ID</th>
+        <th>类型名称</th>
+    </tr>
+    <tr  th:each="pntype,pntypeStat : ${list}">
+        <td th:text="${pntype.id}"></td>
+        <td th:text="${pntype.comments}"></td>
+    </tr>
+</table>
+</body>
+</html>
